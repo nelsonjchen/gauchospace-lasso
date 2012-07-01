@@ -16,9 +16,10 @@ new (function(window, document, $){
 
     // Psuedodirectlinkify all document URLs
     if (window.location.pathname == "/courses/course/view.php"){        
-        //$('a > img[src$="pptx.gif"]').parents("a")
         // Find all onclick elements in anchor links of such elements and
         // remove them. Append &inpopup=true to all of them.
+        //
+        //$(".activity.resource > a")
          
     }
 
