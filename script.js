@@ -1,6 +1,6 @@
 // $$('input:-webkit-autofill')
 
-$('input:-webkit-autofill').css({
-    "background-color": "blue",
-    "border": "2px solid green",
-});
+if (($('input:-webkit-autofill').length > 0) && ($('span[class="error"]').length == 0)){
+    $("form:first[method='post']").submit();
+}
+
