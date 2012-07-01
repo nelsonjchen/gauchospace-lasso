@@ -14,5 +14,11 @@ new (function(window, document, $){
         }
     }
 
+    // Directlinkify all document URLs
+    if (window.location.pathname == "/courses/course/view.php"){
+        //$('a > img[src$="pptx.gif"]').parents("a")
+    
+    }
+
 })(window, document, jQuery);
 
