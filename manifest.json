@@ -9,7 +9,7 @@
     "content_scripts": [
     {  
         "matches": ["https://gauchospace.ucsb.edu/*"],
-        "js": ["script.js"],
+        "js": ["jquery.min.js", "script.js"],
         "css": [] }
     ]
 }
