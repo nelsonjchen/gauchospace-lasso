@@ -9,5 +9,6 @@ It provides two pieces of functionality that are useful to me.
   been autofilled and if that message appears then the extension will
   automatically log you in. 
 
-* Save As... now works for documents other than PDFs. You can now "Save As..."
-  Word, Powerpoint, and probably Excel documents. 
+* Right-Clicking and doing a "Save As..." now works for documents other than
+  PDFs. You can now "Save As..." Word, Powerpoint, and probably Excel
+  documents. 
