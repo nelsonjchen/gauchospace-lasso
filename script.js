@@ -19,8 +19,14 @@ new (function(window, document, $){
         // Find all onclick elements in anchor links of such elements and
         // remove them. Append &inpopup=true to all of them.
         //
-        //$(".activity.resource > a")
-         
+        $(".activity.resource > a").each(function(a){
+            // Remove the onclick
+            this.removeAttribute("onclick");
+            // Psuedo-Direct link to the page. At least it's a 
+            // transparent redirect now.
+            var newurl = this.href.concat("&inpopup=true");
+            this.setAttribute("href", newurl);
+        });
     }
 
 })(window, document, jQuery);
