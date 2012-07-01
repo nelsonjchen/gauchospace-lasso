@@ -12,7 +12,7 @@ new (function(window, document, $){
                 $("form:first[method='post']").submit();
             }
         }
-
     }
+
 })(window, document, jQuery);
 
