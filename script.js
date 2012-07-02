@@ -28,6 +28,21 @@ new (function(window, document, $){
             this.setAttribute("href", newurl);
         });
     }
+    //
+    // Psuedodirectlinkify all document URLs in resource listing
+    if (window.location.pathname == "/courses/mod/resource/index.php"){        
+        // Find all onclick elements in anchor links of such elements and
+        // remove them. Append &inpopup=true to all of them.
+
+        $(".generaltable .c1 a").each(function(a){
+            // Remove the onclick
+            this.removeAttribute("onclick");
+            // Psuedo-Direct link to the page. At least it's a 
+            // transparent redirect now.
+            var newurl = this.href.concat("&inpopup=true");
+            this.setAttribute("href", newurl);
+        });
+    }
 
 })(window, document, jQuery);
 
