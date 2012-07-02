@@ -2,7 +2,7 @@
   "name": "GauchoSpace Lasso",
   "version": "1.4",
   "manifest_version": 2,
-  "description": "GauchoSpace Lasso contains a two tweaks (Auto-Relogin/SaveAs fix) for UCSB's Moodle site.",
+  "description": "GauchoSpace Lasso contains two tweaks (Auto-Relogin/SaveAs fix) for UCSB's Moodle site.",
   "icons": {
       "16": "lasso128.png",
       "48": "lasso128.png",
