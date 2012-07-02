@@ -3,8 +3,9 @@
 new (function(window, document, $){
     $(document).ready(function(){    
         // Auto relogin if timed out.
-        if (window.location.pathname == "/courses/login/index.php"){
-            if ($('input:-webkit-autofill').length > 0){
+        if (window.location.pathname.match(/\/courses\/login\//)){
+            var autofill = $('input:-webkit-autofill');
+            if (autofill.length > 0){
                 // <span class="error">Your session has timed out.  Please login
                 // again.</span>
                 var error_msg = $('span[class="error"]').first();
@@ -30,7 +31,7 @@ new (function(window, document, $){
         }
         //
         // Psuedodirectlinkify all document URLs in resource listing
-        if (window.location.pathname == "/courses/mod/resource/index.php"){        
+        if (window.location.pathname.match(/\/courses\/mod\/resource\//)){        
             // Find all onclick elements in anchor links of such elements and
             // remove them. Append &inpopup=true to all of them.
 
