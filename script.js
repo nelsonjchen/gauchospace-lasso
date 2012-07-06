@@ -29,7 +29,7 @@ new (function(window, document, $){
                 this.setAttribute("href", newurl);
             });
         }
-        //
+        
         // Psuedodirectlinkify all document URLs in resource listing
         if (window.location.pathname.match(/\/courses\/mod\/resource\//)){        
             // Find all onclick elements in anchor links of such elements and
