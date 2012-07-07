@@ -44,6 +44,16 @@ new (function(window, document, $){
                 this.setAttribute("href", newurl);
             });
         }
+
+        // Add faux course links for easier clicking after logging in instead
+        // of scrolling down or moving down.
+        if (window.location.pathname == "/courses/"){        
+            var lcol = $('#left-column');            
+            $('.name > a').each(function(a,b){
+                $(b).prependTo(lcol);
+            })
+            
+        }
     });
 })(window, document, jQuery);
 
