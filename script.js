@@ -63,7 +63,7 @@ new (function(window, document, $){
             quick_list = quick_list.wrap($('<div>', {'class':'content'})).parent();
             quick_list = quick_list.wrap($('<div>', {'class':'sideblock'})).parent();
             quick_list.prepend($('<div>', {'class': 'header', 'text': 'QuickClick Menu'}));
-            quick_list = quick_list.wrap($('<div>')).parent();
+            quick_list = quick_list.wrap($('<div>', {"class":"quickclick"})).parent();
             $(quick_list).prependTo(lcol);            
             
         }

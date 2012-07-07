@@ -12,7 +12,7 @@
   {  
       "matches": ["https://gauchospace.ucsb.edu/*"],
       "js": ["jquery.min.js", "script.js"],
-      "css": [] }
+      "css": ["style.css"] }
   ]
 }
 
