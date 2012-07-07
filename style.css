@@ -2,3 +2,10 @@
     margin: 10px;
     font-size: 25px;
 }
+
+.quickclick a{
+    border-radius: 3px;
+    background-color: lightSteelBlue;
+    border: 1px solid;
+    padding: 5px;
+}
