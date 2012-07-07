@@ -60,7 +60,7 @@ new (function(window, document, $){
                 quick_list.append(new_link_item);
             })
 
-            // quick_list.append("<p>Why click down there when you can click up here?</p>");
+            quick_list.append("<p>Why click down there when you can click up here? :)</p>");
 
             quick_list = quick_list.wrap($('<div>', {'class':'content'})).parent();
             quick_list = quick_list.wrap($('<div>', {'class':'sideblock'})).parent();
