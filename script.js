@@ -53,7 +53,11 @@ new (function(window, document, $){
             var quick_list = $('<ul>', {'class':'list'});
 
             $('.name > a').each(function(a,b){
-                quick_list.append($(b).clone().wrap('<li/>').parent());
+                var short_name = b.text.split(' (')[0];
+                var new_link = $(b).clone();
+                new_link.text(short_name);
+                new_link_item = new_link.wrap('<li>').parent();
+                quick_list.append(new_link_item);
             })
 
             quick_list = quick_list.wrap($('<div>', {'class':'content'})).parent();
