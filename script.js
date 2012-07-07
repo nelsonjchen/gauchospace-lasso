@@ -45,13 +45,22 @@ new (function(window, document, $){
             });
         }
 
-        // Add faux course links for easier clicking after logging in instead
-        // of scrolling down or moving down.
+        // Add quick course links for easier clicking after logging in instead
+        // of scrolling down or moving down the mouse.
         if (window.location.pathname == "/courses/"){        
-            var lcol = $('#left-column');            
+            var lcol = $('#left-column');                        
+
+            var quick_list = $('<ul>', {'class':'list'});
+
             $('.name > a').each(function(a,b){
-                $(b).prependTo(lcol);
+                quick_list.append($(b).clone().wrap('<li/>').parent());
             })
+
+            quick_list = quick_list.wrap($('<div>', {'class':'content'})).parent();
+            quick_list = quick_list.wrap($('<div>', {'class':'sideblock'})).parent();
+            quick_list.prepend($('<div>', {'class': 'header', 'text': 'QuickClick Menu'}));
+            quick_list = quick_list.wrap($('<div>')).parent();
+            $(quick_list).prependTo(lcol);            
             
         }
     });
