@@ -30,7 +30,10 @@ new (function(window, document, $){
                 this.setAttribute("href", newurl);
             });
 
-            $(".weeks tbody").prepend($(".current").clone())
+            var seperator = $(".section.separator").first().clone();
+            var current_week = $(".current").first().clone();
+            $(".weeks tbody").prepend(current_week);
+            current_week.after(seperator);
         }
         
         // Psuedodirectlinkify all document URLs in resource listing
