@@ -31,6 +31,7 @@ new (function(window, document, $){
         }
         
         // Psuedodirectlinkify all document URLs in resource listing
+        // Prepend a clone of the current week to the top
         if (window.location.pathname.match(/\/courses\/mod\/resource\//)){        
             // Find all onclick elements in anchor links of such elements and
             // remove them. Append &inpopup=true to all of them.
