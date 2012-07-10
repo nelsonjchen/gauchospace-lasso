@@ -16,6 +16,7 @@ new (function(window, document, $){
         }
 
         // Psuedodirectlinkify all document URLs
+        // Prepend a clone of the current week to the top
         if (window.location.pathname == "/courses/course/view.php"){        
             // Find all onclick elements in anchor links of such elements and
             // remove them. Append &inpopup=true to all of them.
@@ -28,10 +29,11 @@ new (function(window, document, $){
                 var newurl = this.href.concat("&inpopup=true");
                 this.setAttribute("href", newurl);
             });
+
+            $(".weeks tbody").prepend($(".current").clone())
         }
         
         // Psuedodirectlinkify all document URLs in resource listing
-        // Prepend a clone of the current week to the top
         if (window.location.pathname.match(/\/courses\/mod\/resource\//)){        
             // Find all onclick elements in anchor links of such elements and
             // remove them. Append &inpopup=true to all of them.
