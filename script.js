@@ -17,6 +17,7 @@ new (function(window, document, $){
 
         // Psuedodirectlinkify all document URLs
         // Prepend a clone of the current week to the top
+        // Position-fixed the sidebars
         if (window.location.pathname == "/courses/course/view.php"){        
             // Find all onclick elements in anchor links of such elements and
             // remove them. Append &inpopup=true to all of them.
@@ -34,6 +35,15 @@ new (function(window, document, $){
             var current_week = $(".current").first().clone();
             $(".weeks tbody").prepend(current_week);
             current_week.after(seperator);
+
+            var left_column = $("#left-column").first();
+            var right_column = $("#right-column").first();
+            var shim = $('<td style="width:180px">');
+            left_column.after(shim.clone());
+            // right_column.before(shim.clone());
+            left_column.css("position","fixed");
+            // right_column.css("position","fixed");
+
         }
         
         // Psuedodirectlinkify all document URLs in resource listing
