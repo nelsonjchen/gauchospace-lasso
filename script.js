@@ -37,14 +37,14 @@ new (function(window, document, $){
             current_week.after(seperator);
 
             // Scroll To Fix
-            var left_column = $("#left-column").first();
-            var right_column = $("#right-column").first();
-            var shim = $('<td style="width:180px">');
-            left_column.after(shim.clone());
-            // right_column.before(shim.clone());
-            left_column.css("position","fixed");
-            // right_column.css("position","fixed");
-            // right_column.css("right","5px");
+            // var left_column = $("#left-column").first();
+            // var right_column = $("#right-column").first();
+            // var shim = $('<td style="width:180px">');
+            // left_column.after(shim.clone());
+            // // right_column.before(shim.clone());
+            // left_column.css("position","fixed");
+            // // right_column.css("position","fixed");
+            // // right_column.css("right","5px");
 
         }
         
