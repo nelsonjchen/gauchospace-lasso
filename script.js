@@ -36,6 +36,7 @@ new (function(window, document, $){
             $(".weeks tbody").prepend(current_week);
             current_week.after(seperator);
 
+            // Scroll To Fix
             var left_column = $("#left-column").first();
             var right_column = $("#right-column").first();
             var shim = $('<td style="width:180px">');
