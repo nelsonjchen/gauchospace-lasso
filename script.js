@@ -91,7 +91,7 @@ new (function(window, document, $){
             var quick_list = unescape(localStorage["quicklist"]);
             quick_list_elem = $(quick_list);
             $(quick_list_elem).find(".header").wrapInner($("<h3>"));
-            $(quick_list_elem).append("This is cached from the last logged in user.")
+            $(quick_list_elem).append("This is cached from the last logged in user. If auto-login works for you, then you will be auto-logged in through these links if you were logged out.")
             $("#left > a").after(quick_list_elem);
             // $(quick_list).appendTo($("#left"));
         }
