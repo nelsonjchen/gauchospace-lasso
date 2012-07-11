@@ -81,8 +81,15 @@ new (function(window, document, $){
             quick_list = quick_list.wrap($('<div>', {'class':'sideblock'})).parent();
             quick_list.prepend($('<div>', {'class': 'header', 'text': 'QuickClick Menu'}));
             quick_list = quick_list.wrap($('<div>', {"class":"quickclick"})).parent();
+            quick_list = quick_list.wrap($('<div>')).parent();
             $(quick_list).prependTo(lcol);            
             
+            localStorage["quicklist"] = escape($(quick_list).html());
+        }
+
+        if (window.location.pathname == "/"){
+            var quick_list = unescape(localStorage["quicklist"]);
+            $(quick_list).appendTo($("#left"));
         }
     });
 })(window, document, jQuery);
