@@ -40,10 +40,10 @@ new (function(window, document, $){
             var right_column = $("#right-column").first();
             var shim = $('<td style="width:180px">');
             left_column.after(shim.clone());
-            right_column.before(shim.clone());
+            // right_column.before(shim.clone());
             left_column.css("position","fixed");
-            right_column.css("position","fixed");
-            right_column.css("right","0");
+            // right_column.css("position","fixed");
+            // right_column.css("right","5px");
 
         }
         
