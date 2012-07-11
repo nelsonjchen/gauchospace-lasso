@@ -37,23 +37,11 @@ new (function(window, document, $){
             current_week.after(seperator);
 
             // Scroll To Fix
-            // var left_column = $("#left-column").first();
-            // var right_column = $("#right-column").first();
-            // var shim = $('<td style="width:180px">');
-            // left_column.after(shim.clone());
-            // // right_column.before(shim.clone());
-            // left_column.css("position","fixed");
-            // // right_column.css("position","fixed");
-            // // right_column.css("right","5px");
-
-            var left_column = $("#left-column > div").first();
-            var right_column = $("#right-column").first();
+            var left_column = $("#left-column > div");
+            var right_column = $("#right-column > div");
 
             left_column.scrollToFixed({
-                // postFixed: function(){alert("test");$(this).css("width","180px")},
-                // postAbsolute: function(){alert("test2")},
-                // preFixed: function(){alert("test3")},
-                // preAbsolute: function(){alert("test4")}
+                limit: $("#footer").offset().top - left_column.outerHeight()
             });
         }
         
