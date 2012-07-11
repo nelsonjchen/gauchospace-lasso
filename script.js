@@ -89,7 +89,10 @@ new (function(window, document, $){
 
         if (window.location.pathname == "/"){
             var quick_list = unescape(localStorage["quicklist"]);
-            $(quick_list).appendTo($("#left"));
+            quick_list_elem = $(quick_list);
+            $(quick_list_elem).find(".header").wrapInner($("<h3>"));
+            $("#left > a").after(quick_list_elem);
+            // $(quick_list).appendTo($("#left"));
         }
     });
 })(window, document, jQuery);
