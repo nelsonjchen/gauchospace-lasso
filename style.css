@@ -1,6 +1,7 @@
 .quickclick li {
     margin: 13px;
     font-size: 30px;
+    list-style: none;
 }
 
 .quickclick a{
