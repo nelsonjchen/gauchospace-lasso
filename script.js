@@ -46,6 +46,15 @@ new (function(window, document, $){
             // // right_column.css("position","fixed");
             // // right_column.css("right","5px");
 
+            var left_column = $("#left-column > div").first();
+            var right_column = $("#right-column").first();
+
+            left_column.scrollToFixed({
+                // postFixed: function(){alert("test");$(this).css("width","180px")},
+                // postAbsolute: function(){alert("test2")},
+                // preFixed: function(){alert("test3")},
+                // preAbsolute: function(){alert("test4")}
+            });
         }
         
         // Psuedodirectlinkify all document URLs in resource listing
