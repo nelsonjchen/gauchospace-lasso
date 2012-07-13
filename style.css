@@ -17,6 +17,18 @@
     text-shadow: 2px 2px 3px black;
 }
 
+.mycoursebutton {
+    border-radius: 3px;
+    background-color: #2F65A5;
+    /* color: #FFCC01; */
+    color: #FFDD56;
+    padding: 2.5px 6px;
+    font-weight: bold;
+    box-shadow: inset 1.5px 1.5px 7.5px white,
+                inset -1.5px -1.5px 5px black ;
+    text-shadow: 2px 2px 3px black;
+}
+
 .quickclick li a:hover{
     color: red;
 }
