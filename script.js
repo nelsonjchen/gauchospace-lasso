@@ -92,7 +92,7 @@ new (function(window, document, $){
             var quick_list = unescape(localStorage["quicklist"]);
             quick_list_elem = $(quick_list);
             $(quick_list_elem).find(".header").wrapInner($("<h3>"));
-            $(quick_list_elem).append('<p>If this menu is out of date, <a href="https://gauchospace.ucsb.edu/courses/login/">visit the <span class="mycoursebutton">My Courses</span> page to refresh</a>.</p>');
+            $(quick_list_elem).append('<p>If this menu is out of date, <a href="https://gauchospace.ucsb.edu/courses/">visit the <span class="mycoursebutton">My Courses</span> page while logged in to refresh</a>.</p>');
             $(quick_list_elem).append("<p>This is cached from the last logged in user. If auto-login works for you, clicking will auto-log you in through these links if you were logged out from inactivity.</p>");
             $("#left > a").after(quick_list_elem);
             // $(quick_list).appendTo($("#left"));
