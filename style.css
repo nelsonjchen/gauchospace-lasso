@@ -4,7 +4,7 @@
     list-style: none;
 }
 
-.quickclick a{
+.quickclick li a{
     border-radius: 3px;
     background-color: lightSteelBlue;
     border: 1px solid;
