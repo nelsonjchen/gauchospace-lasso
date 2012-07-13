@@ -93,7 +93,7 @@ new (function(window, document, $){
             quick_list_elem = $(quick_list);
             $(quick_list_elem).find(".header").wrapInner($("<h3>"));
             $(quick_list_elem).append("<p>If this list is outdated, <a href='https://gauchospace.ucsb.edu/courses/login/'>visit this page to refresh</a>.</p>");
-            $(quick_list_elem).append("<p>This is cached from the last logged in user. If auto-login works for you, then you will be auto-logged in through these links if you were logged out.</p>");
+            $(quick_list_elem).append("<p>This is cached from the last logged in user. If auto-login works for you, clicking will auto-log you in through these links if you were logged out from inactivity.</p>");
             $("#left > a").after(quick_list_elem);
             // $(quick_list).appendTo($("#left"));
         }

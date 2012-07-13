@@ -1,14 +1,24 @@
 .quickclick li {
-    margin: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 30px;
     list-style: none;
 }
 
 .quickclick li a{
-    border-radius: 3px;
-    background-color: lightSteelBlue;
-    border: 1px solid;
-    padding: 5px;
+    border-radius: 5px;
+    background-color: #2F65A5;
+    /* color: #FFCC01; */
+    color: #FFDD56;
+    padding: 5px 12.5px;
+    font-weight: bold;
+    box-shadow: inset 3px 3px 15px white,
+                inset -3px -3px 10px black ;
+    text-shadow: 2px 2px 3px black;
+}
+
+.quickclick li a:hover{
+    color: red;
 }
 
 .fauxWeek {
