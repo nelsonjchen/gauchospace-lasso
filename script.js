@@ -33,6 +33,7 @@ new (function(window, document, $){
 
             var seperator = $(".section.separator").first().clone();
             var current_week = $(".current").first().clone();
+            current_week.addClass("fauxWeek");
             $(".weeks tbody").prepend(current_week);
             current_week.after(seperator);
 
