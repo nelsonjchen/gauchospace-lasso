@@ -15,3 +15,8 @@
     border-width: 5px;
     border-style: solid;
 }
+
+#left .quickclick ul {
+    padding: 0;
+    margin-left: 0;
+}
