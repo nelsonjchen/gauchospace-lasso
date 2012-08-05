@@ -11,6 +11,8 @@ new (function(window, document, $){
                 var error_msg = $('span[class="error"]').first();
                 if (error_msg.text().search("Please login again.") > 0){
                     $("form:first[method='post']").submit();
+                    $('.subcontent.loginsub').after(
+                        $('<div class="subcontent autologinsub"><h1>Auto-Logging in</h1></div>'))
                 }
             }
         }
