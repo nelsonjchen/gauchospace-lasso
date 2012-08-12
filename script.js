@@ -33,11 +33,14 @@ new (function(window, document, $){
                 this.setAttribute("href", newurl);
             });
 
+            // Faux Current Week""
             var seperator = $(".section.separator").first().clone();
-            var current_week = $(".current").first().clone();
-            current_week.addClass("fauxWeek");
-            $(".weeks tbody").prepend(current_week);
-            current_week.after(seperator);
+            var current_week = $(".current").first()
+            var faux_current_week = current_week.clone();
+            faux_current_week.addClass("fauxWeek");
+            faux_current_week.attr('id', 'faux-section');
+            $(".weeks tbody").prepend(faux_current_week);
+            faux_current_week.after(seperator);
 
             // Scroll To Fix
             var left_column = $("#left-column > div");
