@@ -48,4 +48,16 @@
 }
 
 .fauxWeek .goto-context {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #2F65A5;
+    /* color: #FFCC01; */
+    color: #FFDD56;
+    padding: 5px 12.5px;
+    font-weight: bold;
+    box-shadow: inset 3px 3px 15px white,
+                inset -3px -3px 10px black ;
+    text-shadow: 2px 2px 3px black;
+    width: 100px;
+    margin: 0px;
 }

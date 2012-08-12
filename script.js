@@ -56,7 +56,7 @@ new (function(window, document, $){
                 .scrollTop(elOffset.top + (elHeight/2) - (viewportHeight/2))
                 .scrollLeft(elOffset.left + (elWidth/2) - (viewportWidth/2));
             });
-            $('.fauxWeek .weekdates').after(gotocontext)
+            $('.fauxWeek .weekdates').before(gotocontext)
 
             // Scroll To Fix
             var left_column = $("#left-column > div");
