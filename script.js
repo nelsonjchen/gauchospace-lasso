@@ -42,7 +42,21 @@ new (function(window, document, $){
             $(".weeks tbody").prepend(faux_current_week);
             faux_current_week.after(seperator);
             // Jump to Context
-            $('.fauxWeek .weekdates').after('<h4 class="goto-context">Go to Context</h4>')
+            var gotocontext = $('<h4 class="goto-context">Go to Context</h4>')
+            current_week.addClass("realCurrentWeek");
+            gotocontext.click(function(){
+                // From Cookbook
+                var viewportWidth = jQuery(window).width(),
+                viewportHeight = jQuery(window).height(),
+                $real_current_week = $('.realCurrentWeek').first(),
+                elWidth = $real_current_week.width(),
+                elHeight = $real_current_week.height(),
+                elOffset = $real_current_week.offset();
+            jQuery(window)
+                .scrollTop(elOffset.top + (elHeight/2) - (viewportHeight/2))
+                .scrollLeft(elOffset.left + (elWidth/2) - (viewportWidth/2));
+            });
+            $('.fauxWeek .weekdates').after(gotocontext)
 
             // Scroll To Fix
             var left_column = $("#left-column > div");
