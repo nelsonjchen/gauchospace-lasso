@@ -41,6 +41,8 @@ new (function(window, document, $){
             faux_current_week.attr('id', 'faux-section');
             $(".weeks tbody").prepend(faux_current_week);
             faux_current_week.after(seperator);
+            // Jump to Context
+            $('.fauxWeek .weekdates').after('<h4 class="goto-context">Go to Context</h4>')
 
             // Scroll To Fix
             var left_column = $("#left-column > div");
