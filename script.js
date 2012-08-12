@@ -42,7 +42,7 @@ new (function(window, document, $){
             $(".weeks tbody").prepend(faux_current_week);
             faux_current_week.after(seperator);
             // Jump to Context
-            var gotocontext = $('<h4 class="goto-context">Go to Context</h4>')
+            var gotocontext = $('<h3 class="goto-context">Go to Context</h3>')
             current_week.addClass("realCurrentWeek");
             gotocontext.click(function(){
                 // From Cookbook
