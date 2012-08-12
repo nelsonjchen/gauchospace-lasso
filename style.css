@@ -62,5 +62,6 @@
 
 .fauxWeek .goto-context:hover {
     color: red;
+    cursor: pointer;
 }
 
