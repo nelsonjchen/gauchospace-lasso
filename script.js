@@ -119,6 +119,9 @@ new (function(window, document, $){
             $("#left > a").after(quick_list_elem);
             // $(quick_list).appendTo($("#left"));
         }
+
+        $('#menubar').prepend('<li><a href="//gauchospace.ucsb.edu">Front');
+
     });
 })(window, document, jQuery);
 
