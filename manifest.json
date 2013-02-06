@@ -2,7 +2,7 @@
   "name": "GauchoSpace Lasso (Retired)",
   "version": "2.0",
   "manifest_version": 2,
-  "description": "This extension is retired as the author is no longer a student and can no longer provide support. If you would like to continue with this extension, please search Github for the Gauchspace-lasso extension. Thank you for flying with me!",
+  "description": "This extension is retired as the author is no longer a student and can no longer provide support. See Github for source.",
   "icons": {
       "16": "lasso128.png",
       "48": "lasso128.png",
