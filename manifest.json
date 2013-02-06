@@ -1,18 +1,18 @@
 {
-  "name": "GauchoSpace Lasso",
-  "version": "1.22",
+  "name": "GauchoSpace Lasso (Retired)",
+  "version": "42.0",
   "manifest_version": 2,
-  "description": "GauchoSpace Lasso contains tweaks for UCSB's Moodle site.",
+  "description": "This extension is retired as the author is no longer a student and can no longer provide support. If you would like to continue with this extension, please search Github for the Gauchspace-lasso extension. Thank you for flying with me!",
   "icons": {
       "16": "lasso128.png",
       "48": "lasso128.png",
       "128": "lasso128.png"
   },
   "content_scripts": [
-  {  
+  {
       "matches": ["https://gauchospace.ucsb.edu/*"],
-      "js": ["jquery.min.js", "script.js", "jquery-scrolltofixed-min.js"],
-      "css": ["style.css"] }
+      "css": ["empty.css"]
+  }
   ]
 }
 
