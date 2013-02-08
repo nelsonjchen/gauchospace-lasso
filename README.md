@@ -1,3 +1,7 @@
+# Retired
+
+This project has been retired. Please check out the forks on Github. 
+
 # Gauchospace Lasso
 
 This Google Chrome extension is for Gauchospace, a Moodle installation in use
